@@ -61,15 +61,15 @@ console.log("=== PORTFOLIO DATA EXPLORER ===");
 console.log("Full portfolio object:", portfolio);
 
 // TODO: During class, we'll add more console.log() statements to explore the data
-// // Examples students will try:
-// console.log("Owner name:", portfolio.owner.name);
-// console.log("First skill:", portfolio.skills[0]);
-// console.log("Number of projects:", portfolio.projects.length);
+// Examples students will try:
+console.log("Owner name:", portfolio.owner.name);
+console.log("First skill:", portfolio.skills[0]);
+console.log("Number of projects:", portfolio.projects.length);
 
 // TODO: Students will learn to access nested properties
-// console.log("Email:", portfolio.owner.email);
-// console.log("Second project:", portfolio.projects[1]);
-// console.log("Available for freelance?", portfolio.availability.freelance);
+console.log("Email:", portfolio.owner.email);
+console.log("Second project:", portfolio.projects[1]);
+console.log("Available for freelance?", portfolio.availability.freelance);
 
 // TODO: Students will create summary strings using template literals
 let summary = `${portfolio.owner.name} is a ${portfolio.owner.title} with ${portfolio.skills.length} skills.`;
@@ -78,3 +78,18 @@ console.log("Summary:", summary);
 console.log("My name:", portfolio.owner.name);
 console.log("Total skills:", portfolio.skills.length);
 console.log("First project:", portfolio.projects[0]);
+
+
+console.log("Portfolio Summary:");
+
+console.log(`${portfolio.owner.name} has ${portfolio.skills.length} skills`);
+console.log(`and ${portfolio.projects.length} projects`);
+
+for (let i = 0; i < portfolio.projects.length; i++) {
+    if (portfolio.projects[i].featured === true) {
+        console.log("⭐ Featured:", portfolio.projects[i].title);
+    }
+}
+
+let dataAsJSON = JSON.stringify(portfolio, null, 2);
+console.log("Portfolio as JSON:", dataAsJSON);

@@ -4,8 +4,8 @@
 // TODO: During class, we'll build HTML strings using our portfolio data
 
 // Example 1: Simple template literal (students will try this first)
-// let welcomeMessage = `Welcome to ${portfolio.owner.name}'s portfolio!`;
-// console.log(welcomeMessage);
+let welcomeMessage = `Welcome to ${portfolio.owner.name}'s portfolio!`;
+console.log(welcomeMessage);
 
 // TODO: Students will build the header section
 // Instructor will demonstrate, then students will code along
@@ -61,7 +61,7 @@ document.write(projectsHTML);
 
 // TODO: Advanced students can try creating different versions
 // Example: Only show featured projects
-/*
+
 let featuredProjectsHTML = '<section><h2>Featured Projects</h2><div class="projects-grid">';
 
 for (let i = 0; i < portfolio.projects.length; i++) {
@@ -82,7 +82,7 @@ for (let i = 0; i < portfolio.projects.length; i++) {
 
 featuredProjectsHTML = featuredProjectsHTML + '</div></section>';
 document.write(featuredProjectsHTML);
-*/
+
 
 // INSTRUCTOR NOTES:
 // - Start with simple template literals
