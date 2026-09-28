@@ -72,9 +72,9 @@ console.log("Full portfolio object:", portfolio);
 // console.log("Available for freelance?", portfolio.availability.freelance);
 
 // TODO: Students will create summary strings using template literals
-let summary = `${portfolio.owner.name} is a ${portfolio.owner.title} with ${portfolio.skills.length} skills.`;
-console.log("Summary:", summary);
+// let summary = `${portfolio.owner.name} is a ${portfolio.owner.title} with ${portfolio.skills.length} skills.`;
+// console.log("Summary:", summary);
 
-console.log("My name:", portfolio.owner.name);
-console.log("Total skills:", portfolio.skills.length);
-console.log("First project:", portfolio.projects[0]);
+// console.log("My name:", portfolio.owner.name);
+// console.log("Total skills:", portfolio.skills.length);
+// console.log("First project:", portfolio.projects[0]);

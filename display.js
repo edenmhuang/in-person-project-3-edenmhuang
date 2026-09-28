@@ -59,6 +59,24 @@ projectsHTML = projectsHTML + '</div></section>';
 document.write(projectsHTML);
 
 
+// Phase 4: Console Practice
+// Step 4.1: Data Analysis
+// Create summary statistics
+console.log("Portfolio Summary:");
+console.log(`${portfolio.owner.name} has ${portfolio.skills.length} skills`);
+console.log(`and ${portfolio.projects.length} projects`);
+
+// Find featured projects
+for (let i = 0; i < portfolio.projects.length; i++) {
+    if (portfolio.projects[i].featured === true) {
+        console.log("⭐ Featured:", portfolio.projects[i].title);
+    }
+}
+
+// Convert to JSON for storage/debugging
+let dataAsJSON = JSON.stringify(portfolio, null, 2);
+console.log("Portfolio as JSON:", dataAsJSON);
+
 // TODO: Advanced students can try creating different versions
 // Example: Only show featured projects
 /*
